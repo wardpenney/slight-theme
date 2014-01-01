@@ -1,16 +1,14 @@
 # Set this to the root of your project when deployed:
 http_path = "/"
 sass_dir = "assets/stylesheets"
-css_dir = "MY_NEW_THEME_NAME-########/assets"
-images_dir = "MY_NEW_THEME_NAME-########/assets"
-javascripts_dir = "MY_NEW_THEME_NAME-########/assets"
+css_dir = "slightjewelry-5922201/assets"
+images_dir = "slightjewelry-5922201/assets"
+javascripts_dir = "slightjewelry-5922201/assets"
 
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :expanded
 
 # line_comments = false
-
-preferred_syntax = :sass
 
 on_stylesheet_saved do |filename|
   if system "mv #{filename} #{filename}.liquid"
